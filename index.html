@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eid Mubarak</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <div class="content">
+    <h1 class="eid-title">Eid Mubarak</h1>
+    <h2 class="to-friend">To: <span id="friend-name">SIAM</span></h2>
+    <p class="eid-wish" id="eid-wish">Wishing you peace, blessings, and endless joy on this Eid-ul-Adha.</p>
+
+    <button class="blessing-btn" onclick="showBlessing()">🎁 Surprise Blessing</button>
+    <p class="blessing-message" id="blessing-msg">Click the button for a special Eid message</p>
+
+    <button class="blessing-btn" onclick="toggleMessage()">💌 Show Araf's Message</button>
+    <p id="araf-message" class="hidden message-box">
+      May your days be full of light, your heart full of joy, and your home full of Barakah. Eid Mubarak from Araf 💚
+    </p>
+
+    <div id="countdown" class="countdown-timer"></div>
+
+    <button class="blessing-btn" onclick="toggleMusic()">🔊 Play Nasheed</button>
+    <button class="blessing-btn" onclick="launchConfetti()">🎉 Celebrate</button>
+
+    <p class="signature">— From Araf</p>
+  </div>
+
+  <audio id="nasheed" loop>
+    <source src="nasheed.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+

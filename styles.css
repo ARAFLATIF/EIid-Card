@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: white;
+    position: relative;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 0;
+  }
+  
+  .content {
+    z-index: 1;
+    text-align: center;
+    padding: 2rem 3rem;
+    background: rgba(255,255,255,0.05);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.15);
+    box-shadow: 0 0 12px rgba(255,255,255,0.1);
+    max-width: 95%;
+  }
+  
+  .eid-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    color: #ffd700;
+    text-shadow: 0 0 10px #fff;
+  }
+  
+  .to-friend {
+    font-size: 1.4rem;
+  }
+  
+  #friend-name {
+    color: #00ffe0;
+    animation: glow 2s infinite ease-in-out;
+  }
+  
+  .eid-wish, .blessing-message {
+    font-size: 1.1rem;
+  }
+  
+  .blessing-btn {
+    margin: 8px;
+    padding: 10px 18px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    background: #00c9a7;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .blessing-btn:hover {
+    background: #00b397;
+  }
+  
+  .signature {
+    margin-top: 2rem;
+    font-style: italic;
+    font-size: 1rem;
+    color: #cccccc;
+  }
+  
+  @keyframes glow {
+    0%, 100% {
+      text-shadow: 0 0 5px #00ffe0;
+    }
+    50% {
+      text-shadow: 0 0 12px #00ffd5;
+    }
+  }
+  
+  .countdown-timer {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+  
+  .message-box {
+    margin-top: 1rem;
+    font-style: italic;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  
+  
+  
+  
